@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    
+</head>
+<body>
+    
+    <div id="Container">
+        <!-- <div id="Box"></div> -->
+    </div>
+    <script>
+        // const colors=["red","blue","green","black","yellow","orange","pink"]
+        const container=document.getElementById("Container");
+
+        //const box=document.getElementById("Box");
+        container.style.height="100vh";
+        container.style.width="100vw";
+        container.style.border="1px solid black";
+        container.style.display="grid";
+        container.style.gap="10px";
+
+        container.style.gridTemplateColumns = "repeat(auto-fill, minmax(100px, 1fr))";
+        container.style.padding = "10px";
+        container.style.boxSizing = "border-box";
+
+
+        const numberOfBoxes = 400; 
+
+        for(let i=0;i<=numberOfBoxes;i++){
+
+            const box=document.createElement("div");
+
+            box.style.height = "100px";
+            box.style.width = "100px";
+            box.style.border = "1px solid black";
+            box.style.cursor = "pointer";
+            box.style.backgroundColor = "lightgray";
+
+            box.addEventListener("mouseover", () => {
+                const red = Math.floor(Math.random() * 256);
+                const green = Math.floor(Math.random() * 256);
+                const blue = Math.floor(Math.random() * 256);
+
+                box.style.backgroundColor = `rgb(${red},${green},${blue})`;
+            });
+            container.appendChild(box);
+
+        }
+
+        
+        
+    </script>
+
+</body>
+</html>
+
+
+
+ 

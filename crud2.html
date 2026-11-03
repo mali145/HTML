@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div> 
+        <form id="form">
+            <input placeholder="Enter name" type="text" name=""  id="">
+            <input type="submit" value="add">
+        </form>
+    </div>
+
+    <script>
+        const form=document.getElementById("form")
+
+        form.addEventListener("submit" ,(event)=>{
+            event.preventDefault()
+            console.log(event,`event`)
+
+        })
+
+
+    </script> -->
+     <!-- <div> 
+        <form id="form">
+            <!-- <input required  placeholder="Enter name" type="text" name=""  id=""> -->
+             <!-- <input  placeholder="Enter name" type="text" name=""  id="">  -->
+
+
+            <!-- <input type="submit" value="add"> -->
+        <!-- </form> -->
+
+
+        <!-- <ul id="listItems"></ul> -->
+    <!-- </div> --> 
+
+    <!-- <script>
+        const form=document.getElementById("form")
+        const ul=document.getElementById("listItems")
+
+        form.addEventListener("submit" ,(e)=>{
+            e.preventDefault()
+          // console.log( e.target[0].value)
+          const textContent=e.target[0].value.trim()
+
+       console.log(textContent,textContent.length ,"textContent")
+       if(textContent.length===0){
+             alert("please enter items")
+             return
+       }
+
+
+
+           createListItems(e.target[0].value)
+            
+           //acess form
+        //    e.target.reset()
+           form.reset()
+
+
+         })
+          function  createListItems(textContent){
+            const li=document.createElement("li")
+            li.textContent=textContent;
+            ul.appendChild(li)
+
+          } -->
+
+
+    <!-- </script> --> 
+    <div> 
+        <form id="form">
+            <!-- <input required  placeholder="Enter name" type="text" name=""  id=""> -->
+             <input  placeholder="Enter name" type="text" name="name"  >
+              <input   type="email" name="email"  >
+              <input   type="number" minlength="10" maxlength="10" name="phone Number"  >
+              
+
+
+            <button type="submit"  disabled=true value="add"></button>
+        </form>
+        <table border="">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>PhoneNumber</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+
+       
+    </div>
+
+    <script>
+        const form=document.querySelector("form")
+        const table=document.getElementById("listItems")
+          
+
+        form.addEventListener("submit" ,(e)=>{
+            e.preventDefault()
+           let name=e.target[0].value
+           let email=e.target[1].value
+           let phone=e.target[2].value
+           console.log(e.target[0].value,e.target[1].value,e.target[2].value)
+
+           if(name.length==0|| email.length===0|| phonne.length==0){
+            alert("please enter all field")
+            return
+           }
+
+              
+          
+           //form.reset()
+
+
+         })
+
+
+
+
+        function Addtables(textContent){
+             
+             
+
+
+          }
+          function AddtablesItems(name ,email,phone){
+            const tr=document.createAttribute("tr")
+             const  tdone= document.createElement("td")
+             tdone.textContent=name
+             const  tdtwo= document.createElement("td")
+             tdtwo.textContent=email
+             const  tthree= document.createElement("td")
+             tdthree.textContent=phone
+
+
+         const tdfour=document.createElement("td")
+          const button=document.createElement("delete")
+          button.appendChild("button")
+          button.onclick=function(){
+            tr.remove()
+            console.log()
+          }
+
+          tr.append(tdone,tdtwo,tdthree,tdfour)
+
+          table.appendChild(tr)
+
+
+
+
+
+
+          }
+
+
+    </script>
+    
+
+    
+</body>
+</html>

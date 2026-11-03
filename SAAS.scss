@@ -1,0 +1,79 @@
+// $primary-color:aqua;
+// $spacing:20px;
+
+// .card{
+//     background-color: $primary-color;
+//     padding: $spacing;
+// }
+// .button{
+//     background-color: $primary-color;
+//     padding: $spacing;
+
+// }
+
+
+
+
+
+// $primary-color: orange;
+// $secoundy-color: white;
+// $ternary-color:green;
+// $font-family:"Arial",sans-sarif;
+// $base-size:40px;
+// $rounded:true;
+
+
+
+
+// $theme: (
+//     primary: $primary-color,
+//     secondary: $secoundy-color,
+//     ternary: $ternary-color,
+// );  
+
+
+// .button{
+//     font-family:$font-family;
+//     font-size:$base-size;
+//     color:$primary-color;
+//     background:$secoundy-color;
+
+
+// }
+//     $component:"card";
+
+
+
+// .#($component){
+//     padding: 20px;
+
+// }
+
+
+.card{
+background-color: purple;
+p{
+font: 300;
+
+}
+h1{
+    color: beige;
+    font: 400;
+
+
+
+}
+&:hover{
+    background-color: crimson;
+}
+
+
+
+&--child{
+    font: 200;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+}

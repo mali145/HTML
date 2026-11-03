@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- <div>
+         <h1 id="headingOne">heading</h1> -->
+           <!-- remove lement -->
+    <!--<h1>heading</h1>
+    <button>Deleting heading </button>
+
+    </div>
+    <div> 
+         -->
+        <!-- <button id="changeTextbtn">change heading</button>
+        <button id="changeTextbtn">update heading</button> -->
+    </div>
+
+     <!-- create a card if we  clickk card it it will change the color -->
+      <div>
+    <div id="Box">
+
+    </div>
+    </div>
+    <script>
+
+
+        console.log("js is working")
+        // const  h1s=document.querySelectorAll("h1")
+        // const h1=document.getElementById("headingOne")
+        
+        // //h1.textContent="update heading One"
+        // // const btn=document.getElementById("changeTextbtn")
+        //  const btn=document.querySelector("#changeTextbtn")
+        //  const btn1=document.querySelector("button")
+        //   const btn2=document.querySelectorAll("button")
+        
+        
+        
+        // whenever
+        //btn.addEventListener("click", changeText)
+        // function changeText(){
+        //     console.log("btn click")
+        //     h1.textContent="update heading One"
+        // }
+        //2
+        // console.log(h1s, h1 ,btn,btn1,btn2)
+
+        //console.log(h1,h1.textContent, 'document')
+        //remove heading -- using id only
+        // const h1=document.querySelector("h1")
+        // const btn=document.querySelector("button")
+        // console.log(btn,"btn")
+
+        // btn.addEventListener("click" ,()=>{
+        //     console.log("btn click")
+        //     h1.remove();
+            
+        // })
+        //inner html - change the content of the element throung js
+        // if we write textcontent this is treat as textonly
+        //  accesing element  with ..class
+
+
+
+
+        const box=document.getElementById("Box")
+        box.style.height="400px"
+        box.style.width="400px"
+        box.style.border= "1px solid black"
+        box.style.cursor="poiter"
+        
+
+        // const random=Math.random()
+        // console.log(Math.floor(random*256))
+
+
+
+        //const colors=["red","blue" ,"orange","black","yellow"]
+        box.addEventListener("click" ,()=>{
+            const red=Math.floor(Math.random()*256)
+            const green=Math.floor(Math.random()*256)
+            const blue=Math.floor(Math.random()*256)
+            Box.style.background=`rgb(${red},${green},${blue})`
+
+
+             
+            // .Math.random(colors)
+            
+
+        })
+  //console.log(box)
+
+            box.addEventListener("mouseover" ,()=>{
+            const red=Math.floor(Math.random()*256)
+            const green=Math.floor(Math.random()*256)
+            const blue=Math.floor(Math.random()*256)
+            Box.style.background=`rgb(${red},${green},${blue})`
+
+
+
+             
+            // .Math.random(colors)
+            
+            
+            
+
+        })
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

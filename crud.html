@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div >
+        <ul id="listItems"></ul>
+        <button onclick="addCss(`css`)">add Css</button>
+        <button onclick="addCss(`javascript`)">add javascript</button>
+        <button onclick="addCss(`REACT`)">add REACT</button>
+        <button onclick="addAll()">addAll</button>
+        
+       <button onclick="removeAll()">removeAll</button>
+        
+
+</div>
+    <script>
+
+        const ul=document.getElementById("listItems")
+        const li=document.createElement("li")
+
+        li.textContent =`HTML`
+        ul.appendChild(li)
+       
+
+        console.log(li,`li`)
+
+
+      
+        // function addCss(){
+        // const li=document.createElement("li")
+
+        // li.textContent =`Css`
+        // ul.appendChild(li)
+
+        // }
+
+        function addCss(textContent){
+         const li=document.createElement("li")
+
+         li.textContent =textContent
+         ul.appendChild(li)
+
+         }
+         function addAll(){
+           const textContent=["html","css","react"]
+           for(let i=0; i<textContent.length ;i++){
+            const li=document.createElement("li")
+
+         li.textContent =textContent[i]
+         ul.appendChild(li)
+
+           }
+         }
+
+
+        function  removeAll(){
+            console.log(ul.childNodes)
+            ul.innerHTML=``
+            // const childNode=ul.childNodes
+            // const length=childNode.length
+            // for(let i=0 ;i<length;i++){
+            //     childNode[0].remove()
+            // }
+        
+        }
+
+    </script>
+    
+</body>
+</html>

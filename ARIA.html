@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Portfolio</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+   <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav li {
+  display: inline;
+}
+
+img {
+  max-width: 200px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+
+   </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav role="navigation">
+    <ul>
+      <li role="listitem"><a href="#home">Home</a></li>
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Heading -->
+  <h1 role="heading">Jane Doe - Portfolio</h1>
+
+  <!-- Brief Description -->
+  <p>Hello! I am a web developer focused on building clean, fast, and accessible digital experiences.</p>
+
+  <!-- Image -->
+  <img role="img" src="https://thumbs.dreamstime.com/b/monarch-orange-butterfly-bright-summer-flowers-background-blue-foliage-fairy-garden-macro-artistic-image-monarch-167030287.jpg" alt="Portrait photo of Jane Doe smiling in front of a laptop">
+
+  <!-- List with at least three items -->
+  <ul role="list">
+    <li role="listitem">Web Development (HTML, CSS, JavaScript)</li>
+    <li role="listitem">UI/UX Accessibility (WCAG Compliance)</li>
+    <li role="listitem">Performance Optimization</li>
+  </ul>
+
+</body>
+</html>
+

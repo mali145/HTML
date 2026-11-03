@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        body{
+            background-color: #FFFFFF;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding:0;
+
+
+        }
+     #navbar{
+        height: 40px;
+        width: 100%;
+        background-color:#496ADC;
+        display: flex;
+        justify-content: space-between;
+
+     }
+     .leftNav{
+        /* border: 1px solid black; */
+        height: 100%;
+        width: 90%;
+        /* background-color: black; */
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        /* we used this line anchor with space givene equally */
+        /* justify-content:space-evenly; */
+
+     }
+     .rightNav{
+        height: 100%;
+        width: 10%;
+        /* last step= background-color: orange; */
+        display: flex;
+        align-items: center;
+        /* justify-content: end; */
+        justify-content: center;
+
+
+
+     }
+     a{
+        color: white;
+        /*  if we remove link underline we used text decoration */
+        text-decoration: none;
+     }
+     .mainBox{
+        border:1px solid black;
+        height: 500px;
+        width: 1000px;
+        display: flex; 
+         /* flex-direction: column; */
+         flex-direction: row-reverse;
+         justify-content: space-between;
+         /* align-items: center; */
+         flex-wrap: wrap;
+
+     }
+     .box{
+        height: 50px;
+        width: 40px;
+        /* flex-grow: 1; */
+        border: 1px solid black;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+        
+
+     }
+     /* #box1{
+        flex-grow: 2;
+     } */
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        
+        
+        
+        <div class="leftNav">
+            <a href="">google</a>
+            <a href="">youtube</a>
+            <a href="">linkedin</a>
+        </div>
+        <div class="rightNav">
+
+
+            <a href="">spotify</a>
+        </div>
+    
+    </div>
+    <div class="mainBox">
+
+
+        <div class="box" id="box1">1</div>
+        <div class="box">2</div>
+       <div class="box">3</div>
+       <div class="box">4</div>
+
+
+
+
+
+        
+    </div>
+</body>
+</html>

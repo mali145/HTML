@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* .container :nth-child(odd){
+            color: red;
+
+        }
+        .container :nth-child(even){
+            color: blueviolet;
+        }
+        .container::before{
+            content :"***";
+        }
+        .container::after{
+            content: "***";
+            color:orangered ;
+
+
+        } */
+
+
+   .header{
+    height: 4rem;
+    background:linear-gradient(to right,skyblue,purple ,darkblue);
+   }
+   .grad{
+    height: 500px;
+    width: 500px;
+    background-image: radial-gradient(blue ,red,yellow);
+   }
+   .container{
+    height: 800px;
+    width:800px;
+    position:relative;
+   }
+   .box{
+    height: 500px;
+    width: 500px;
+ border-radius: 50%; 
+    background-color: yellow;
+    position: absolute;
+    left: 50px;
+    /* top: 20px; */
+
+
+    
+
+   }
+
+   .childBox{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    left :30%;
+    top:35%;
+   }
+
+
+
+   .Box{
+    height:  500px;
+    width: 500px;
+    background-color: rgb(173, 147, 1);
+    position: relative;
+
+
+   }
+   .Box :nth-child(2){
+    position: absolute;
+    top:0;
+   right:0
+   }
+
+.Box :nth-child(3){
+    position: absolute;
+    top:50%;
+    left:50%
+   }
+   .Box :nth-child(4){
+
+    position: absolute;
+    right:0;
+    bottom:0
+    
+   }
+   .Box :nth-child(5)
+   {
+    top:50%;
+    left:0
+   }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+
+        <p>one</p>
+        <p>Two</p>
+        <p>Three</p>
+        <p>Four</p>
+
+
+
+
+    </div> -->
+
+
+
+<!-- positiion aare four types
+ 1 static
+ 2 fix
+ 3relative 
+ 3 absolute -->
+ 
+
+
+
+
+
+
+
+<header class="header"> 
+    <!--  <div class="grad"></div> -->
+ </header> 
+
+
+   <div class="container"></div>
+   <div class="box"></div>
+
+
+    <div class="childBox">
+
+ </div>
+
+
+ <div class="Box">
+    <p>top-left</p>
+    <p >top-right</p>
+    <p>center</p>
+    <p>bottom-left</p>
+    <p>bottom-right</p>
+ </div>
+
+
+
+
+
+
+</body>
+</html>
